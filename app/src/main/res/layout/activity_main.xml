@@ -31,7 +31,7 @@ android:background="@color/myYellow">
     android:text="Continue"
     android:onClick="moveToNextActivity"
     android:layout_marginTop="64dp"
-    android:background="@color/myRed"
+    android:background="@color/deep_green"
     android:layout_below="@+id/editText1"
     android:layout_centerHorizontal="true" />
 
@@ -52,6 +52,7 @@ android:background="@color/myYellow">
         android:layout_height="wrap_content"
         android:text="Quit"
         android:id="@+id/quit"
+        android:background="@color/myRed"
         android:onClick="quit"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true" />

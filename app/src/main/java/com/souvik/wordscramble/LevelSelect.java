@@ -104,7 +104,7 @@ public class LevelSelect extends Activity {
         }, 2000);
     }
     */
-
+/*
     public void exit(View v)
     {
         adb.setTitle("Quit?");
@@ -121,5 +121,5 @@ public class LevelSelect extends Activity {
         adb.show();
 
     }
-
+*/
 }

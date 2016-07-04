@@ -11,24 +11,27 @@
 
     <TextView
         android:id="@+id/greetings"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textStyle="bold"
         android:textColor="@android:color/white"
         android:textSize="30sp"
         android:textColorHighlight="@android:color/background_light"
         android:text="Name"
+        android:gravity="center"
         android:fontFamily="cursive"
-        android:layout_marginTop="71dp"
+        android:layout_marginTop="74dp"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentStart="true" />
 
     <RadioGroup
         android:id="@+id/radioGroup1"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
-        android:layout_toEndOf="@+id/button1">
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="84dp">
+      <!--  android:layout_toEndOf="@+id/button1" -->
 
         <RadioButton
             android:id="@+id/radio0"
@@ -64,7 +67,7 @@
             android:textColor="@android:color/white"
             android:onClick="expert" />
     </RadioGroup>
-
+<!--
     <Button
         android:id="@+id/button1"
         android:layout_width="wrap_content"
@@ -75,5 +78,5 @@
         android:background="@color/myRed"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true" />
-
+  -->
 </RelativeLayout>
