@@ -32,7 +32,8 @@ public class GamePlay extends Activity {
     Intent i;
     String n,lv,s="";
     ArrayList<String> quesWord=new ArrayList<String>();
-    int score=0,chances=3,j;
+    int score=0;
+    int chances=3;
     Cursor c;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +47,8 @@ public class GamePlay extends Activity {
         points=(TextView) findViewById(R.id.score);
         name=(TextView) findViewById(R.id.name);
         b=(Button) findViewById(R.id.match);
+
+
         i=getIntent();
         n=i.getStringExtra("name");
 
@@ -59,8 +62,6 @@ public class GamePlay extends Activity {
         insertIntoExpert();
         fetchWords();
         adb= new AlertDialog.Builder(this);
-
-
 
         Window window = this.getWindow();
         window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
@@ -291,8 +292,8 @@ public class GamePlay extends Activity {
     protected void onResume() {
         super.onResume();
         final String [] str=quesWord.toArray(new String[quesWord.size()]);
-        points.setText("Score: "+score);
         attemptsLeft.setText("Attempts left: "+chances);
+        points.setText("Score: "+score);
         jumbleWord.setText(wordJumble(str[0]));
         b.setOnClickListener(new OnClickListener() {
             int j=0;
