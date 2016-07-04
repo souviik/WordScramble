@@ -18,6 +18,7 @@ import android.widget.Toast;
 /**
  * Created by Souvik on 28/06/16.
  */
+
 public class LevelSelect extends Activity {
 
     AlertDialog.Builder adb;
@@ -82,9 +83,9 @@ public class LevelSelect extends Activity {
         lvl3.putExtra("level","Expert");
         startActivity(lvl3);
     }
-
-    boolean doubleBackToExitPressedOnce = false;
 /*
+    boolean doubleBackToExitPressedOnce = false;
+
     @Override
     public void onBackPressed() {
         if (doubleBackToExitPressedOnce) {
