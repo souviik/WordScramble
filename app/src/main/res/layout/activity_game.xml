@@ -1,0 +1,120 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.souvik.wordscramble.GamePlay"
+    android:background="@color/myPink" >
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:textSize="25sp"
+        android:text="Name"
+        android:textAlignment="viewStart"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:fontFamily="cursive"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/score" />
+
+    <TextView
+        android:id="@+id/lvdisp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:text="Level"
+        android:textStyle="bold"
+        android:textAlignment="viewEnd"
+        android:layout_alignBottom="@+id/name"
+        android:layout_alignEnd="@+id/score"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/match"
+        android:layout_alignStart="@+id/match" />
+
+    <EditText
+        android:id="@+id/ans"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/jumbled"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textCursorDrawable="@null"
+        android:hint="Enter Your Answer Here"
+        android:textColor="@android:color/black"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/jumbled"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="67dp"
+        android:textSize="50sp"
+        android:textColor="@android:color/black"
+        android:text="Large Text"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_below="@+id/attemp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textAlignment="viewEnd"
+        android:textColor="@android:color/black"
+        android:text="Score"
+        android:textStyle="bold"
+        android:layout_above="@+id/jumbled"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/attemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="41dp"
+        android:textSize="20sp"
+        android:textAlignment="viewStart"
+        android:textColor="@android:color/black"
+        android:text="Attempts left"
+        android:textStyle="bold"
+        android:layout_below="@+id/lvdisp"
+        android:layout_alignStart="@+id/name"
+        android:layout_toStartOf="@+id/lvdisp"
+        android:layout_alignEnd="@+id/match" />
+
+    <Button
+        android:id="@+id/match"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:textColor="@android:color/black"
+        android:text="Match"
+        android:background="@color/myGreen"
+        android:layout_below="@+id/ans"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:id="@+id/back"
+        android:onClick="back"
+        android:background="@color/myRed"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="myYellow">#FFF176</color>
+    <color name="myPink">#FF4081</color>
+    <color name="myRed">#F44336</color>
+    <color name="myCyan">#00BCD4</color>
+    <color name="myblue">#84FFFF</color>
+    <color name="myOrg">#FF9800</color>
+    <color name="myGreen">#B2FF59</color>
+    <color name="my_status_bar_yellow">#FFEA00</color>
+    <color name="my_status_bar_red">#FFA726</color>
+    <color name="my_status_bar_pink">#FF80AB</color>
+
+
+</resources>

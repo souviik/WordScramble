@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Word Scramble</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_level">LevelSelect</string>
+    <string name="title_activity_game">GamePlay</string>
+</resources>
